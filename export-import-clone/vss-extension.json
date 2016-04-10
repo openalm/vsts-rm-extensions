@@ -1,0 +1,111 @@
+{
+    "manifestVersion": 1,
+    "id": "rm-import-export",
+    "version": "0.1.50",
+    "name": "Release Management Import Export",
+    "description": "Release management import export.",
+    "publisher": "ms-vscs-rm",
+    "icons": {
+        "default": "images/export-import.png"
+    },
+    "scopes": ["vso.release_execute"],
+    "categories": [
+        "Build and release"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+	"content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+	"branding": {
+        "color": "#99e6ff",
+        "theme": "light"
+    },	
+    "files": [
+         {
+             "path": "main.html", "addressable": true
+         },
+		 {
+             "path": "import-dialog-content.html", "addressable": true
+         },
+         {
+             "path": "scripts", "addressable": true
+         },
+         {
+             "path": "sdk/scripts", "addressable": true
+         },
+         {
+             "path": "images/icon-export.png", "addressable": true
+         },
+         {
+             "path": "images/icon-clone.png", "addressable": true
+         },
+         {
+             "path": "images/icon-import.png", "addressable": true
+         }, 
+         {
+             "path": "images/help1.png", "addressable": true
+         }
+     ],
+    "contributions": [
+        {
+            "id": "exportDefinitionContextMenu",
+            "type": "ms.vss-web.action",
+            "description": "Export definition tree's context menu",
+            "targets": [
+                "ms.vss-releaseManagement-web.release-definition-explorer-context-menu"
+            ],
+            "properties": {
+                "title": "Export...",
+                "text": "Export...",
+                "icon": "images/icon-export.png",
+                "group": "actions",
+                "uri": "main.html"
+            }
+        },
+        {
+            "id": "newCloneDefinitionContextMenu",
+            "type": "ms.vss-web.action",
+            "description": "Clone definition tree's context menu",
+            "targets": [
+                "ms.vss-releaseManagement-web.release-definition-explorer-context-menu"
+            ],
+            "properties": {
+                "title": "Clone...",
+                "text": "Clone...",
+                "icon": "images/icon-clone.png",
+                "group": "actions",
+                "uri": "main.html"
+            }
+        },
+		{
+            "id": "importDefinitionToolbarMenu",
+            "type": "ms.vss-web.action",
+            "description": "Import definition(s) menu",
+            "targets": [
+                "ms.vss-releaseManagement-web.release-definition-explorer-toolbar-menu"
+            ],
+            "properties": {
+                "title": "Import release definition",
+				"text": "Import RD",
+                "icon": "images/icon-import.png",
+				"group": "actions",
+                "uri": "main.html"
+            }
+        },
+		{
+        "id": "import-dialog-content",
+        "type": "ms.vss-web.control",
+        "description": "The content displayed in the dialog",
+        "targets": [],
+        "properties": {
+            "uri": "import-dialog-content.html"
+         }
+       }
+    ]
+}
