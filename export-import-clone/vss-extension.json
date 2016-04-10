@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "rm-import-export",
-    "version": "0.1.50",
+    "version": "0.1.54",
     "name": "Release Management Import Export",
     "description": "Release management import export.",
     "publisher": "ms-vscs-rm",
@@ -69,7 +69,7 @@
             }
         },
         {
-            "id": "newCloneDefinitionContextMenu",
+            "id": "cloneDefinitionContextMenu",
             "type": "ms.vss-web.action",
             "description": "Clone definition tree's context menu",
             "targets": [

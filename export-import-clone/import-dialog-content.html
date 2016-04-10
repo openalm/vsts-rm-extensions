@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <title>Release Management Import Export</title>
 </head>
-<body id="test">
-    Select the Release definition JSON file to import it's content
+<body>
+    <div>Select the Release definition JSON file to import it's content</div>
+	<br/>
     <script src="sdk/scripts/VSS.SDK.js"></script>
-	<script src="scripts/main.js"></script>
-    
+	<script src="scripts/main.js"></script>  
     <script>
-        VSS.init({ usePlatformScripts: true });
-		
+        VSS.init({ usePlatformScripts: true });	
 		fileImportDialog;
 		VSS.register("import-dialog-content", fileImportDialog);
     </script>
-	</body>
+</body>
 </html>
