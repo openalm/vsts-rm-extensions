@@ -12,7 +12,23 @@ function downloadContent(data, name) {
     }
 }
 
+function normalizeDefinitionEnvironmentObject(definition) {
+            definition =  normalizeDefinitionObject(definition);
+            definition.environments.forEach(function (environment) {		
+            environment.owner = null;
+            environment.queueId = 0;
+            });
+            return definition;
+        };
 
+
+function normalizeDefinitionObject(definition) {
+            definition.id = 0;
+			definition.name = definition.name.concat('- Copy');           
+            return definition;
+        };
+
+		
 var fileImportDialog = (function(){
 var fileContent = "";
   VSS.require(["VSS/Controls/FileInput"],
@@ -59,18 +75,19 @@ var importDefinitionToolbarMenu = (function () {
 			getDialogResult: function() {
 			
 			fileContent.getFileData().then(function(data){
+			  try {
 				definition = JSON.parse(data);
-				definition.id = 0;
-				definition.name = definition.name.concat('- Copy')
+				definition = normalizeDefinitionEnvironmentObject(definition);
 				window.sourceItemContext.view.openReleaseDefinition(definition);
+				return true;
+				}
+				catch(ex) {
+				 alert("File contains corrupt data");
+				 return false;
+				}
 				
 			});
-                
-            return true;
-            },
-			okCallback: function (result) {
-                // Log the result to the console
-                console.log(JSON.stringify(result));
+             return true;
             }
         };
 
@@ -117,10 +134,9 @@ var cloneDefinitionContextMenu = (function () {
 			var vsoContext = VSS.getWebContext();
             // Get a RM client to make REST calls
             var rmClient = VSS_Service.getCollectionClient(RM_WebApi.ReleaseHttpClient);
-			rmClient.getReleaseDefinition(vsoContext.project.id,sourceItemContext.definition.id).then(function(def){
-			    def.id = 0;
-				def.name = def.name.concat('- Copy')
-                sourceItemContext.view.openReleaseDefinition(def);
+			rmClient.getReleaseDefinition(vsoContext.project.id,sourceItemContext.definition.id).then(function(definition){
+			    definition = normalizeDefinitionObject(definition);
+                sourceItemContext.view.openReleaseDefinition(definition);
             });
         });
      }

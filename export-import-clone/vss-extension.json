@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "rm-import-export",
-    "version": "0.1.54",
+    "version": "0.1.57",
     "name": "Release Management Import Export",
     "description": "Release management import export.",
     "publisher": "ms-vscs-rm",
