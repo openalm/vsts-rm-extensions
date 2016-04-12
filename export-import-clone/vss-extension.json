@@ -92,8 +92,7 @@
             ],
             "properties": {
                 "title": "Import release definition",
-				"text": "Import RD",
-                "icon": "images/icon-import.png",
+				"icon": "images/icon-import.png",
 				"group": "actions",
                 "uri": "main.html"
             }
