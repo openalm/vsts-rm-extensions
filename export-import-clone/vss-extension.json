@@ -61,8 +61,8 @@
                 "ms.vss-releaseManagement-web.release-definition-explorer-context-menu"
             ],
             "properties": {
-                "title": "Export...",
-                "text": "Export...",
+                "title": "Export",
+                "text": "Export",
                 "icon": "images/icon-export.png",
                 "group": "actions",
                 "uri": "main.html"
@@ -76,8 +76,8 @@
                 "ms.vss-releaseManagement-web.release-definition-explorer-context-menu"
             ],
             "properties": {
-                "title": "Clone...",
-                "text": "Clone...",
+                "title": "Clone",
+                "text": "Clone",
                 "icon": "images/icon-clone.png",
                 "group": "actions",
                 "uri": "main.html"
