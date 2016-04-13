@@ -69,7 +69,7 @@
             "properties": {
                 "title": "Export",
                 "text": "Export",
-                "icon": "images/icon-export.png",
+                "icon": "images/icon-export-16.png",
                 "group": "actions",
                 "uri": "main.html"
             }
@@ -98,7 +98,7 @@
             ],
             "properties": {
                 "title": "Import release definition",
-				"icon": "images/icon-import.png",
+				"icon": "images/icon-import-16.png",
 				"group": "actions",
                 "uri": "main.html"
             }
