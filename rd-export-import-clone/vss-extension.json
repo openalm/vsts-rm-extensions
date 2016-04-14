@@ -56,6 +56,9 @@
          }, 
          {
              "path": "images/icon-import-16.png", "addressable": true
+         },
+         {
+             "path": "images/Readme.png", "addressable": true
          }
      ],
     "contributions": [
