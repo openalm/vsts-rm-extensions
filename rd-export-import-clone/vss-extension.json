@@ -40,22 +40,22 @@
              "path": "sdk/scripts", "addressable": true
          },
          {
-             "path": "images/icon-export.png", "addressable": true
+             "path": "images/Import.png", "addressable": true
          },
-         {
-             "path": "images/icon-clone.png", "addressable": true
-         },
-         {
-             "path": "images/icon-import.png", "addressable": true
-         }, 
-         {
-             "path": "images/Clone.png", "addressable": true
-         }, 
          {
              "path": "images/Export.png", "addressable": true
          }, 
          {
-             "path": "images/Import.png", "addressable": true
+             "path": "images/Clone.png", "addressable": true
+         },
+         {
+             "path": "images/icon-clone.png", "addressable": true
+         },		 
+         {
+             "path": "images/icon-export-16.png", "addressable": true
+         }, 
+         {
+             "path": "images/icon-import-16.png", "addressable": true
          }
      ],
     "contributions": [
