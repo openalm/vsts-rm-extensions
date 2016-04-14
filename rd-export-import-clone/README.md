@@ -5,4 +5,4 @@ This extension supports the following functionality w.r.t. a release definition:
 3. **Import**
 
 #### Snapshot from installed extension
-![ReleaseDefinition Duplicating](images/Readme.PNG)
+![Readme](images/Readme.PNG)
