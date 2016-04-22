@@ -1,16 +1,19 @@
 {
     "manifestVersion": 1,
     "id": "rm-import-export",
-    "version": "1.0.1",
-    "name": "Release definition Import Export",
-    "description": "Release management import export.",
-    "publisher": "ms-vscs-rm",
+    "version": "0.0.1",
+    "name": "Clone release definition",
+    "description": "Clone, import and/or export release definition",
+    "publisher": "ms-devlabs",
     "icons": {
         "default": "images/export-import.png"
     },
     "scopes": ["vso.release_execute"],
     "categories": [
         "Build and release"
+    ],
+	"tags": [
+        "Release", "DevOps"
     ],
     "targets": [
         {
@@ -26,6 +29,17 @@
         "color": "#5C2D91",
         "theme": "dark"
     },	
+	"screenshots": [
+    	{
+      		"path": "images/import.png"
+    	},
+    	{
+      		"path": "images/export.png"
+    	},
+    	{
+      		"path": "images/clone.png"
+    	}
+    ],
     "files": [
          {
              "path": "main.html", "addressable": true
@@ -40,13 +54,13 @@
              "path": "sdk/scripts", "addressable": true
          },
          {
-             "path": "images/Import.png", "addressable": true
+             "path": "images/import.png", "addressable": true
          },
          {
-             "path": "images/Export.png", "addressable": true
+             "path": "images/export.png", "addressable": true
          }, 
          {
-             "path": "images/Clone.png", "addressable": true
+             "path": "images/clone.png", "addressable": true
          },
          {
              "path": "images/icon-clone.png", "addressable": true

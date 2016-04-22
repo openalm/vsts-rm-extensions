@@ -1,9 +1,6 @@
-# Release definition export, import and clone
+# Clone release definition
 ### Overview
-This extension supports the following functionality w.r.t. a release definition:
-1. **Clone**
-2. **Export**
-3. **Import**
+This extension lets you copy your release definition in the same project or across projects/accounts. You may clone an existing RD to the same account+project or export it and import later in another project or another account+project.
 
 ### Details:
 ####Clone
