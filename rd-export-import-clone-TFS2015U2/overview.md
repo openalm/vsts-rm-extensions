@@ -5,7 +5,7 @@ This extension lets you copy your release definition in the same project or acro
 ### Details:
 ####Clone
 Using this feature you can clone an existing Release definition (RD) in the same project.
-__Clone__ option will appear as context menu to an existing release definition. On using this feature, a new RD gets created with the same name of the RD being cloned but appended by " - Copy".
+__Clone__ option will appear as context menu to an existing release definition. On using this feature, a new RD gets created with the same name of the RD being cloned but appended by " - Copy". 
 ![Clone](images/Clone.png)
 
 ####Export
