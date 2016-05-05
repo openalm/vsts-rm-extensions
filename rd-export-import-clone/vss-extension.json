@@ -1,10 +1,11 @@
 {
     "manifestVersion": 1,
-    "id": "rm-import-export",
+    "id": "rm-clone-rd",
     "version": "0.0.2",
     "name": "Clone release definition",
     "description": "Clone, import and/or export release definition",
     "publisher": "ms-devlabs",
+	"public": true,
     "icons": {
         "default": "images/export-import.png"
     },
@@ -17,7 +18,7 @@
     ],
     "targets": [
         {
-            "id": "Microsoft.VisualStudio.Services"
+            "id": "Microsoft.VisualStudio.Services.Cloud"
         }
     ],
 	"content": {
