@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "rm-import-export",
-    "version": "0.0.2",
+    "version": "0.0.1",
     "name": "Clone release definition",
     "description": "Clone, import and/or export release definition",
     "publisher": "ms-devlabs",
@@ -28,8 +28,8 @@
 	"branding": {
         "color": "#5C2D91",
         "theme": "dark"
-    },	
-	"screenshots": [
+    },
+    "screenshots": [
     	{
       		"path": "images/import.png"
     	},
@@ -39,13 +39,10 @@
     	{
       		"path": "images/clone.png"
     	}
-    ],
+    ],	
     "files": [
          {
              "path": "main.html", "addressable": true
-         },
-		 {
-             "path": "import-dialog-content.html", "addressable": true
          },
          {
              "path": "scripts", "addressable": true
@@ -63,7 +60,7 @@
              "path": "images/clone.png", "addressable": true
          },
          {
-             "path": "images/icon-clone.png", "addressable": true
+             "path": "images/icon-clone-16.png", "addressable": true
          },		 
          {
              "path": "images/icon-export-16.png", "addressable": true
@@ -101,12 +98,12 @@
             "properties": {
                 "title": "Clone",
                 "text": "Clone",
-                "icon": "images/icon-clone.png",
+                "icon": "images/icon-clone-16.png",
                 "group": "actions",
                 "uri": "main.html"
             }
         },
-		{
+        {
             "id": "importDefinitionToolbarMenu",
             "type": "ms.vss-web.action",
             "description": "Import definition(s) menu",
@@ -119,15 +116,6 @@
 				"group": "actions",
                 "uri": "main.html"
             }
-        },
-		{
-        "id": "import-dialog-content",
-        "type": "ms.vss-web.control",
-        "description": "The content displayed in the dialog",
-        "targets": [],
-        "properties": {
-            "uri": "import-dialog-content.html"
-         }
-       }
+        }
     ]
 }

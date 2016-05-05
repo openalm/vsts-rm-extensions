@@ -1,0 +1,19 @@
+{
+  "name": "rd-export-import-clone",
+  "homepage": "https://github.com/openalm/vsts-rm-extensions/tree/master/rd-export-import-clone",
+  "description": "",
+  "main": "",
+  "moduleType": [ ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vss-web-extension-sdk": "1.98.0"
+  }
+}
