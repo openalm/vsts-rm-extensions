@@ -144,8 +144,8 @@ var cloneDefinitionContextMenu = (function () {
 }());
 
 
-VSS.register("importDefinitionToolbarMenu", importDefinitionToolbarMenu);
-VSS.register("exportDefinitionContextMenu", exportDefinitionContextMenu);
-VSS.register("cloneDefinitionContextMenu", cloneDefinitionContextMenu);
+VSS.register("ms-devlabs.rm-clone-rd.importDefinitionToolbarMenu", importDefinitionToolbarMenu);
+VSS.register("ms-devlabs.rm-clone-rd.exportDefinitionContextMenu", exportDefinitionContextMenu);
+VSS.register("ms-devlabs.rm-clone-rd.cloneDefinitionContextMenu", cloneDefinitionContextMenu);
 
 
