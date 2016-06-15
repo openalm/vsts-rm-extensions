@@ -80,7 +80,7 @@
         {
             "id": "exportDefinitionContextMenu",
             "type": "ms.vss-web.action",
-            "description": "Export definition tree's context menu"
+            "description": "Export definition tree's contextmenu"
         }
     ]
 }
