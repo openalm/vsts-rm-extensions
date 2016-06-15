@@ -17,7 +17,7 @@
     ],
     "targets": [
         {
-            "id": "Microsoft.VisualStudio.Services.Integration"
+            "id": "Microsoft.VisualStudio.Services"
         }
     ],
 	"content": {
