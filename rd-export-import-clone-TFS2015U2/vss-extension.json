@@ -17,7 +17,7 @@
     ],
     "targets": [
         {
-            "id": "Microsoft.TeamFoundation.Server"
+            "id": "Microsoft.VisualStudio.Services.Integration"
         }
     ],
 	"content": {
