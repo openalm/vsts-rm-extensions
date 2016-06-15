@@ -1,4 +1,7 @@
 # Clone release definition
+
+**Note:** This extension is only available for __TFS 2015 Update 2__ and above. The capability to clone, export and import release definitions is not available as in-built functionality on VS Team Services.
+
 ### Overview
 This extension lets you copy your release definition in the same project or across projects/accounts. You may clone an existing RD to the same account+project or export it and import later in another project or another account+project.
 
