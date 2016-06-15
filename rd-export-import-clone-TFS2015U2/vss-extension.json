@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "rm-clone-rd-tfs",
     "version": "0.0.1",
-    "name": "Clone release definition",
+    "name": "Clone release definition (on TFS)",
     "description": "Clone, import and/or export release definition",
     "publisher": "ms-devlabs",
     "icons": {
