@@ -1,6 +1,6 @@
 {
     "manifestVersion": 1,
-    "id": "rm-import-export",
+    "id": "rm-clone-rd-tfs",
     "version": "0.0.1",
     "name": "Clone release definition",
     "description": "Clone, import and/or export release definition",
@@ -17,7 +17,7 @@
     ],
     "targets": [
         {
-            "id": "Microsoft.VisualStudio.Services"
+            "id": "Microsoft.TeamFoundation.Server"
         }
     ],
 	"content": {
