@@ -48,7 +48,7 @@ var cloneDefinitionContextMenu = (function () {
                     var rmClient = VSS_Service.getCollectionClient(RM_WebApi.ReleaseHttpClient);
                     rmClient.getReleaseDefinition(vsoContext.project.id,sourceItemContext.definition.id).then(function(definition){
                         definition.name = newDefinitionName;
-						rmClient.createReleaseDefinition(definition, vsoContext.project.id).then(() => {
+						rmClient.createReleaseDefinition(definition, vsoContext.project.id).then( function() {
                             sourceItemContext.view.refresh();
                             sourceItemContext.view.logMessage("Cloned \'"+ sourceItemContext.definition.name +"\' and created \'" + newDefinitionName + "\'");
                         }, function(error){
