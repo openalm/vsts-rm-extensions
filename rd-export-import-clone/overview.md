@@ -1,4 +1,4 @@
-# Clone release definition
+# Clone release definition (deprecated)
 
 **Note:**  **This extension has been deprecated as this functionality is now part of VS Team Services**. If you would like to use this functionality on TFS, you can do so on TFS 2015 Update 2 onwards - by downloading and installing [this extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.rm-import-export)
 
