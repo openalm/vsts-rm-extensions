@@ -1,4 +1,4 @@
-# Clone release definition
+# Clone release definition (for TFS 2015 U2 and above)
 
 **Note:** This extension is only available for __TFS 2015 Update 2__ and above. The capability to clone, export and import release definitions is not available as in-built functionality on VS Team Services.
 
