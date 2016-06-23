@@ -5,6 +5,7 @@
     "name": "Clone release definition (on TFS)",
     "description": "Clone, import and/or export release definition",
     "publisher": "ms-devlabs",
+    "public": true,
     "icons": {
         "default": "images/export-import.png"
     },
