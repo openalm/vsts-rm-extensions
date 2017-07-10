@@ -6,6 +6,7 @@ function downloadContent(data, name) {
     }
     else{
         var a = document.createElement("a");
+        document.body.appendChild(a);
         a.href = URL.createObjectURL(file);
         a.download = name;
         a.click();

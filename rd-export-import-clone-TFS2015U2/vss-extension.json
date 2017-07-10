@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "rm-import-export",
-    "version": "0.0.2", 
+    "version": "0.0.3", 
     "name": "Clone release definition (for TFS 2015 U2 and above)",
     "description": "Clone, import and/or export release definition",
     "publisher": "ms-devlabs",
